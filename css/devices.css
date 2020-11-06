@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width:667px){
+    #main{
+        width:667px;
+    }
+        #main header figure{
+    float:none;
+}
+#main header nav{
+    float:none;
+    display:none;
+}
+ 
+#banner{
+width:661px;
+height:250px;
+     
+}
+#wrapper{
+    width:1983px;
+    height:200px;
+}
+ 
+#wrapper .one{
+ 
+    width:661px;
+ 
+     
+}
+ 
+#wrapper .two{
+width:661px;
+ 
+}
+#wrapper .three{
+    width:661px;
+ 
+}
+ 
+.test{
+    position:absolute;
+    background-color:rgba(0,0,0,0.75);
+    padding:10px;
+    bottom:10px;
+    left:10px;
+}
+.test h1{
+    font-family:bold;
+    color:#FFF;
+    margin:0px;
+    font-size:15px;
+     
+ 
+}
+.test p{
+    font-family:light;
+    margin:0px;
+    color:#FFF;
+    font-size:10px;
+}
+ 
+ 
+#i1:checked ~ #wrapper{
+    margin-left:0px;
+}
+#i2:checked ~ #wrapper{
+        margin-left:-661px;
+}
+#i3:checked ~ #wrapper{
+        margin-left:-1322px;
+}
+ 
+     
+}
+@media screen and (max-width:375px){
+    #main{
+        width:375px;
+    }
+     
+    #main header figure #logo{
+        width:75px;
+        height:75px;
+        background-size:75px 75px;
+    }
+    #main header figure{
+         
+    float:none;
+    display:table;
+    margin:auto;
+ 
+ 
+}
+ 
+#main header select{
+display:block;
+width:360px;
+height:30px;
+}
+ 
+#main header nav{
+    float: none;
+    display: none;
+    color: #F0F0F0;
+}
+ 
+#banner{
+width:369px;
+height:200px;
+     
+}
+#wrapper{
+    width:1107px;
+    height:150px;
+}
+ 
+#wrapper .one{
+ 
+    width:369px;
+ 
+     
+}
+ 
+#wrapper .two{
+    width:369px;
+}
+#wrapper .three{
+        width:369px;
+}
+ 
+.test{
+    position:absolute;
+    background-color:rgba(0,0,0,0.75);
+    padding:10px;
+    bottom:10px;
+    left:10px;
+}
+.test h1{
+    font-family:bold;
+    color:#FFF;
+    margin:0px;
+    font-size:15px;
+     
+ 
+}
+.test p{
+    font-family:light;
+    margin:0px;
+    color:#FFF;
+    font-size:10px;
+}
+ 
+ 
+#i1:checked ~ #wrapper{
+    margin-left:0px;
+}
+#i2:checked ~ #wrapper{
+        margin-left:-369px;
+}
+#i3:checked ~ #wrapper{
+        margin-left:-738px;
+}
+ 

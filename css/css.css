@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+ 
+@font-face{
+    font-family:bold;
+    src:url(../fonts/RobotoCondensed-Bold.ttf);
+}
+@font-face{
+    font-family:light;
+    src:url(../fonts/RobotoCondensed-Light.ttf);
+}
+@font-face{
+    font-family:regular;
+    src:url(../fonts/RobotoCondensed-Regular.ttf);
+}
+body{
+    margin:0px;
+    background-image:url(../assets/bg.jpg);
+    background-repeat:repeat-x;
+}
+section,figure,h1,h2,h3,h4,h5,h6,p,ul,li{
+    margin:0px;
+    padding:0px;
+}
+ 
+ 
+ 
+#main{
+ 
+    margin:auto;
+        margin-top:26px;
+    width:950px;
+     
+     
+}
+ 
+#main header{
+    background-color:#fff;
+    padding:10px;
+    -webkit-perspective:400px;
+    -moz-perspective:400px;
+    box-shadow:1px 1px 10px rgba(0,0,0,0.25);
+     
+ 
+/*
+overflow:hidden;
+*/
+}
+ 
+#main header figure{
+    float:left;
+    -webkit-transition:all 1s  ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -moz-transform-origin:right center;
+}
+#main header select{
+display:none;
+}
+ 
+ 
+ 
+#main header figure #logo{
+ 
+    width:100px;
+    height:100px;
+    background-image:url(../image/logo.png);
+    background-size:100px 100px;
+}
+ 
+#main header nav{
+    float:right;
+     
+}
+ 
+#main header nav ul:nth-child(1){
+    margin-top:40px;
+     
+     
+}
+#main header nav ul:nth-child(1) li{
+    float:left;
+    list-style-type:none;
+    background-color:#c00;
+    padding:4px;
+    margin-right:1px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:14px;
+    color:#FFF;
+    font-family:regular;
+    text-transform:uppercase;
+    letter-spacing:-0.5px;
+    cursor:pointer;
+    -webkit-transition:all 0.5s  ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -moz-transform-origin:right bottom;
+     
+ 
+}
+ 
+#main header nav ul:nth-child(1) li:hover{
+    background-color:#fc0;
+    color:#333;
+padding-left:30px;
+-webkit-transform:scale(1.5,1.5) rotate(20deg);
+-moz-transform:scale(1.5,1.5) rotate(20deg);
+ 
+}
+ 
+#main header nav ul:nth-child(2){
+margin-top:5px;
+}
+ 
+ 
+#main header nav ul:nth-child(2) li{
+    float:right;
+    list-style-type:none;
+    padding:4px;
+    margin-right:1px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:14px;
+    color:#666;
+    font-family:regular;
+    text-transform:uppercase;
+    letter-spacing:-0.5px;
+    border-left:1px solid #ccc;
+}
+ 
+#main header nav ul:nth-child(2) li:nth-child(3){
+    border-left:0px solid #ccc;
+}
+ 
+ 
+.clear{
+    clear:both;
+}
+ 
+#banner{
+    width:944px;
+    border:3px solid #fbfbfb;
+    height:350px;
+    margin-top:15px;
+    box-shadow:1px 1px 10px rgba(0,0,0,0.25);
+    overflow:hidden;
+    position:relative;
+ 
+ 
+}
+ 
+#wrapper{
+    width:2832px;
+    height:300px;
+    margin-left:0px;
+    transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -webkit-transition:all 1s ease-in-out;
+     
+}
+ 
+ 
+#wrapper .one{
+	float: left;
+	width: 944px;
+	height: inherit;
+	background-image: url(../image/covid.jpg);
+	background-size: cover;
+	position: relative;     
+}
+ 
+#wrapper .two{
+        float:left;
+    width:944px;
+    height:inherit;
+    background-image:url(../image/hospital.jpg);
+    background-size:cover;
+    background-position:center center;
+    position:relative;
+}
+#wrapper .three{
+	float: left;
+	width: 944px;
+	height: inherit;
+	background-image: url(../image/covid111.jpg);
+	background-size: cover;
+	background-position: center bottom;
+	position: relative;
+}
+ 
+#banner input{
+    position:absolute;
+    z-index:1000;
+    opacity:0;
+}
+#i1{
+    right:50px;
+    bottom:10px;
+}
+#i2{
+right:30px;
+    bottom:10px;
+}
+#i3{
+    right:10px;
+    bottom:10px;
+}
+ 
+ 
+#i1:checked ~ #wrapper{
+    margin-left:0px;
+}
+#i2:checked ~ #wrapper{
+        margin-left:-944px;
+}
+#i3:checked ~ #wrapper{
+        margin-left:-1888px;
+}
+ 
+#a1,#a2,#a3{
+    position:absolute;
+    width:13px;
+    height:13px;
+    background-color:#ccc;
+    bottom:11px;
+    z-index:999;
+    border-radius:100%;
+}
+ 
+#a1{
+    right:53px;
+}
+#a2{
+    right:33px;
+}
+#a3{
+    right:13px;
+}
+ 
+#i1:checked ~ #a1{
+    background-color:#666;
+}
+ 
+#i2:checked ~ #a2{
+    background-color:#666;
+}
+ 
+#i3:checked ~ #a3{
+    background-color:#666;
+}
+ 
+.test{
+    position:absolute;
+    background-color:rgba(0,0,0,0.75);
+    padding:10px;
+    bottom:20px;
+    left:20px;
+}
+.test h1{
+    font-family:bold;
+    color:#FFF;
+    margin:0px;
+    font-size:34px;
+     
+ 
+}
+.test p{
+    font-family:light;
+    margin:0px;
+    color:#FFF;
+    font-size:16px;
+}
+ 
